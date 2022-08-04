@@ -8,7 +8,10 @@ states = {
 }
 
 # Use the each method to iterate through it and print out a sentence stating each state name and abbreviation
-#
+
+states.each do |name, abbreviation|
+  puts "\n\n The abbreviation for #{name} is #{abbreviation} \n\n"
+end
 #
 #
 
@@ -28,6 +31,10 @@ birthdays = {
 #
 #
 
+birthdays.each do |name, birthday|
+  puts "\n\n #{name}'s birthday is on #{birthday} \n\n"
+end
+
 
 # ======================================
 # 3- Using the following Hash
@@ -43,3 +50,8 @@ login_statuses = {
 #
 #
 #
+login_statuses.each do |name, status|
+  if status == true
+  puts "\n\n",name, "\n\n"
+  end
+end
